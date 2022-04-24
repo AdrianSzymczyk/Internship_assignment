@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "91f37126-822e-4953-a359-1172e8c27d59",
+		"name": "REST_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "upload_file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/ADRIAN/INFORMATYKA_STUDIA/PythonForMyself/internship_task/Salaries.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rows_number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/rows/Salaries",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"rows",
+						"Salaries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "columns_number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/columns/Salaries",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"columns",
+						"Salaries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "min_of_column",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/Salaries/min/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"Salaries",
+						"min",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "max_of_column",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/Salaries/max/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"Salaries",
+						"max",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mean_of_column",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/Salaries/mean/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"Salaries",
+						"mean",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_percentile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/Salaries/column/2/percentile/70",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"Salaries",
+						"column",
+						"2",
+						"percentile",
+						"70"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "missing_column_values",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/Salaries/missing/column/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"Salaries",
+						"missing",
+						"column",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
