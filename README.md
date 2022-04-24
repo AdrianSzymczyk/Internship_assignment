@@ -11,4 +11,4 @@ Then by using the command: <br>
 you have to install plugins required to proper operation. After that you have to simply run this command:<br>
 **python run.py<br>**
 
-The next step is to run the POSTMAN and import the collection of the requests *(REST_API.postman_collection)*. After this step you can test created breakpoints and see the results.
+The next step is to run the POSTMAN and import the collection of the requests *(REST_API.postman_collection)*. After this step you can test created endpoint and see the results.
